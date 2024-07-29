@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 65px; 
+    width: 100%; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    background-color: #333; 
+    z-index: 1000; 
+}
+
+header nav {
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header nav ul li {
+    margin: 0 15px; 
+}
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: color 0.3s; 
+}
+
+header nav ul li a:hover {
+    color: #ff6600; 
+}
+
+.cara{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.uno {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    
+    background-color: #303030;
+    color: white;
+}
+
+
+.caja-central{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 65%;
+}
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #424242;
+}
+
+
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #F2F2F2;
+    color: #303030;
+    padding: 10px;
+}
+
+.dos{
+    background-color: #F2F2F2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #303030;
+}
+.dos h2{
+    text-align: center;
+}
+
+.dos li{
+    font-size: 18px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+
+}
+
+.aptitudes{
+    width: 50%;
+}
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.tech{
+    height: 90px;
+}
+
+.tres{
+    background-color: #303030;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: solid #F2F2F2 1px; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); 
+    border-color: #ff6600; 
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a, footer a {
+    color: white;
+}
+
+.card .icono {
+    width: 32px;
+    height: 32px;
+}
+
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.SeccionContacto{
+    display: none;
+}
+footer{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+
+.contacto a {
+    display: inline-block; 
+    transition: all 0.10s ease; 
+}
+
+.contacto a:hover img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.red-social {
+    width: 50px; 
+    height: 50px; 
+}
+
+
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    body{
+        background-color: #333;
+    }
+
+    header{
+        position: static; 
+    }
+
+    .caja-central{
+        margin: 0px;
+        width: 93%;
+        height: 95%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+
+    .cara {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 20%; 
+    }
+    
+
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .dos{
+        height: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+    .tres{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 5px 0 5px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: #303030;
+        width: 100%;
+    }
+
+    footer a{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+}
